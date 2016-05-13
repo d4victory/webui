@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Full front-end Comic</title>
+        <meta name="description" content="Comics using localstorage" />
+        <meta name="author" content="Dante Salamone" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+    </head>
+
+    <body>
+  			<header>
+  				<img src="images/logo.png" class="logo">
+  			</header>
+
+          <section id="container">
+            <p id="welcome">¡Welcome!</p>
+              <div id="subContainer">
+                  <div id="body">
+                    <p>
+                      <label >Username:</label></p>
+                      <input type="text" id="user" placeholder="Enter a username" autofocus="">
+                      <span class="error" id="userError"></span>
+                    </p>
+
+                    <p>
+                      <label>Password:</label></p>
+                      <input type="password" id="password" placeholder="Enter a Password" required="true">
+                      <span class="error" id="passwordError"></span>
+                    </p>
+
+                    <p class="administrador">
+                      <label>I'm Admin:</label></p>
+                      <input type="checkbox" name="admin" id="admin">
+                    </p>
+
+                    <p id="bot">
+                      <button onclick="signIn()" name="signIn" class="button">Log In</button>
+                      <button onclick="signUp()" name="signUp" class="button">Log Up</button>
+                    </p>
+                  </div>
+              </div>
+              <div id="infoHTML"></div>
+          </section>
+
+    <script type="text/javascript" src="js/login.js"></script>
+    </body>
+</html>

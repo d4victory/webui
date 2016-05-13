@@ -1,0 +1,171 @@
+body {
+    background: #3F4258 url(../images/backImage.jpg) no-repeat center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-repeat: repeat;
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+}
+
+.administrador {
+    float: left;
+    width: 30%;
+}
+
+#admin{
+  width: auto;
+  float: none;
+  display: inline-block;
+  text-transform: capitalize;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  text-indent: 2px;
+  border: none;
+}
+
+#logued .header {
+    background-color: rgba(0, 0, 0, 0.43);
+    top: 0;
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    z-index: 1;
+}
+
+#register{
+  float:left;
+  width:80%;
+  font-size:24px;
+  font-weight:bold;
+  color:#3F4258;
+  text-align:right;
+}
+
+#container{
+    position:fixed;
+    left:50%;
+    top:50%;
+    margin-left:-165px;
+    margin-top: -150px;
+    width: 330px;
+    transition: all 1s;
+
+}
+
+#subContainer{
+    background-color:#BF00FF;
+    box-shadow: 3px 3px 10px 5px rgba(0,0,0,.8);
+    -webkit-border-radius:5px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+}
+
+#cabecera{
+    border-bottom: 5px solid #333;
+    height:70px;
+    line-height:50px;
+    text-align:center;
+    margin-top: 50px;
+}
+
+#body{
+    background:#ececec;
+    border:solid #ccc;
+    border-width: 2px 0;
+    padding:15px 35px;
+}
+
+label{
+    color: #668cff;
+    font-weight: bold
+}
+
+input{
+    border-radius:10px;
+    box-shadow: 2px 2px 3px 1px rgba(0,0,0,.8);
+    font:bold 12px Helvetica, Arial, sans-serif;
+    height: 24px;
+    line-height: 20px;
+    padding:0 2px;
+    width: 230px;
+}
+
+input#user{
+    background:#e6ecff no-repeat 0 2px;
+    padding-left: 25px;
+}
+
+
+input#password{
+    background:#e6ecff no-repeat 0 5px;
+    padding-left: 25px;
+
+}
+
+.button{
+    background: #5c5c8a;
+    background: -webkit-linear-gradient(top,#e6ecff,#5c5c8a);
+    background: linear-gradient(top,#e6ecff,#5c5c8a);
+    color: #5c5c8a;
+    width: 120px;
+    text-align: center;
+}
+
+.button:active{
+    position: relative;
+    top: 3px;
+}
+
+form,p{
+    margin:0;
+}
+
+p{
+    padding-bottom: 5px;
+}
+
+button{
+  width: 50px;
+}
+
+p#bot{
+    padding-top: 10px;
+    color: #333;
+}
+
+p#welcome{
+   color: #5c5c8a;
+   text-shadow: 1px 1px #5c5c8a;
+   font-style: oblique;
+   font-size: 30px;
+   text-align: left;
+}
+
+.logo{
+    width: 10%;
+    text-align: center;
+    display: block;
+    margin: 40px auto 0;
+    transition: all 1s;
+}
+
+.error {
+  color: rgb(249, 111, 111);
+  font-size: 16px;
+  text-align: left;
+  float: left;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+
+#infoHTML {
+    text-align: center;
+    color: #FFBF29;
+    text-shadow: 2px 2px 5px #000;
+    margin-top: 19px;
+    position: absolute;
+    right: 70px;
+    width: 200px;
+    text-align: center;
+}

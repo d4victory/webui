@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bienvenido a full front end comics!</title>
+        <meta name="description" content="Comics using localstorage" />
+        <meta name="author" content="Dante Salamone" />
+        <link rel="stylesheet" type="text/css" href="css/home.css" />
+        <link rel="stylesheet" type="text/css" href="css/slide.css" />
+    </head>
+
+    <body id="Login">
+
+      <script type="text/javascript">
+        function deploy(_valor){
+            document.getElementById("bgWindow").style.visibility=_valor;
+        }
+      </script>
+      <!--Header-->
+      <header class="header">
+
+        <!--Header: Div con menú,logo y logout-->
+        <div class="FixedHeader">
+          <div id="bgWindow">
+            <div id="vWindow">
+              <a href="javascript:deploy('hidden');">Cerrar</a>
+              <br>
+            </div>
+          </div>
+          <!--Header: Div logo y logout-->
+            <div id="images-header">
+            <a onclick="javascript:deploy('visible');showProfileData()"><img src="images/logo.png" title= "My Profile" class="logo" id="logo"></img></a>
+            <a onclick="sigOut()"><img src="images/signOut.png" title= "Sign Out" class="logo" id="signOut"></img></a>
+            </div>
+          <!--Header: span que muestra la info del user logueado-->
+          <span class="infoHTML" id="userInfo"></span>
+        </header>
+
+        <section id="tags">
+          <div class="advancedSearch">
+            <span>Advanced Search</span><br>
+            <span>By: </span>
+            <select id="tagAdvancedSearch">
+							<option value="character">Character</option>
+							<option value="name">Name</option>
+							<option value="recommended">Recommended</option>
+						</select>
+            <input id="input" type="text" name="advancedSearch" placeholder="What to search?">
+            <input type="button" name="Search" value="Search" onclick="searchBy()">
+            <input type="button" name="clean" value="Clean Search" onclick="showComics();removeTagAdvancedSearchContent()">
+          </div>
+
+					<div class="filter">
+						<span>Genre: </span>
+						<select id="tagGenre" onchange="filterByGenre()">
+							<option value="all">all</option>
+							<option value="scienceFiction">Sciense Fiction</option>
+							<option value="superheroes">Superheroes</option>
+							<option value="others">Others</option>
+						</select><br>
+            <span>Character: </span>
+						<select id="tagCharacter" onchange="filterByCharacter()">
+							<option value="all">All</option>
+							<option value="batman">Batman</option>
+							<option value="superman">Superman</option>
+							<option value="spiderman">Spiderman</option>
+              <option value="spiderwoman">Spiderwoman</option>
+						</select>
+					</div>
+				</section>
+
+        <!--Header: section con slide de imagenes-->
+        <section id="slideSection">
+          <input type="radio" name="slider-select-element" id="element1" checked="checked" />
+          <input type="radio" name="slider-select-element" id="element2" />
+          <input type="radio" name="slider-select-element" id="element3" />
+
+          <div id="slider-container">
+              <div id="slider-box">
+                  <div class="slider-element">
+                      <article class="element-red">
+                        <img src="images/slide/img3.jpg" alt="Avengers">
+                      </article>
+                  </div>
+                  <div class="slider-element">
+                      <article class="element-green">
+                        <img src="images/slide/img1.jpg" alt="Spiderman">
+                      </article>
+                  </div>
+                  <div class="slider-element">
+                      <article class="element-blue">
+                        <img src="images/slide/img2.jpg" alt="Batman">
+                      </article>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+        <div id="slider-arrows">
+            <label for="element1"></label>
+            <label for="element2"></label>
+            <label for="element3"></label>
+        </div>
+    </section>
+
+    <!--Sección en la que van los comics-->
+    <section id="infoComics"></section>
+
+    <!--Carga de dependencias-->
+    <script src="js/data.js"></script>
+    <script src="js/home.js"></script>
+    </body>
+
+</html>

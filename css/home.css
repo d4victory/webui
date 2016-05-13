@@ -1,0 +1,222 @@
+body {
+    background: #3F4258 url(../images/backImage2.jpg) no-repeat center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-repeat: repeat;
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+}
+
+header{
+  position: fixed;
+  text-align: right;
+  width:100%;
+  background: rgba(216, 7, 7, 0.64);
+  left:0;
+  top:0;
+}
+
+.header {
+    width:100%;
+    height:75px;
+}
+
+#Login .administrator {
+    display:  none;
+}
+
+.administrator {
+    float: left;
+    width: 50%;
+}
+
+#logo{
+    width: 40%;
+    text-align: center;
+    display: relative;
+    margin-left: 1000px;
+    cursor: pointer;
+}
+
+#images-header{
+  padding: 1px 10px 5px 10px;
+  float:left;
+  width:200px;
+  height: 200px;
+  text-align:center;
+}
+
+#signOut{
+  padding: 1px 10px 50px 10px;
+  margin-top: -65px;
+  width: 40%;
+  display: relative;
+  margin-left: 1060px;
+}
+
+#userInfo {
+    text-align: center;
+    color: white;
+    padding: 0px 70px 30px 10px;
+    text-shadow: 0px 2px 5px #000;
+    margin-top: -50px;
+    display: relative;
+    right: 100px;
+    width: 200px;
+    text-align: center;
+}
+
+#signOut{
+  cursor: pointer;
+}
+
+
+ul{
+  list-style: none;
+}
+#menu li>a{
+  text-align: center;
+  color: ##4C0B5F;
+  margin-top: 10px;
+  position: block;
+  right: 100px;
+  width: 200px;
+  text-align: center;
+  min-width: 200px;
+  padding: 5px;
+}
+#menu li>a:hover{
+  color: black;
+  background-color: white;
+}
+#menu>li{
+  float: left;
+  text-align:left;
+}
+#menu>li>ul{
+  display: none;
+}
+#menu>li:hover>ul {
+  display:block;
+}
+nav{
+  background-color: white;
+  position: block;
+}
+#menu{
+  font-family: Helvetica;
+  font-style: italic;
+  font-family: fantasy;
+  position: block;
+}
+.comicDetail {
+    background-color: rgba(0, 0, 0, 0.29);
+    font-size: 14px;
+    padding: 12px;
+    line-height: 22px;
+    margin-top: -4px;
+    color: white;
+}
+.item-comic {
+  width: 25%;
+  display: inline-block;
+  padding: 30px;
+  box-sizing: border-box;
+  position: relative;
+  transition: all .6s;
+  font-size: 18px;
+  vertical-align: top;
+}
+
+.item-comic img {
+    width: 100%;
+}
+
+.item-comic h3 {
+    text-align: center;
+    background-color: rgba(216, 7, 7, 0.64);
+    padding: 12px 0;
+}
+
+#bgWindow{
+  position: fixed;
+  background: rgba(0,0,0,0.7);
+  width: 200px;
+  height: 10px;
+  background-color: transparent;
+  visibility: hidden;
+}
+
+#vWindow{
+    position: absolute;
+    background-color: black;
+    border: solid #FFF 10px;
+    width: 500px;
+    height: 200px;
+    top: 35px;
+    left: 400px;
+    color: white;
+    text-align: left;
+}
+
+#tags {
+    color: #fff;
+    margin-top: 120px;
+    max-width: 1100px;
+    margin: 120px auto;
+    position: relative;
+}
+
+.filter {
+    position: absolute;
+    right: 40px;
+    z-index: 1;
+    text-align: justify;
+}
+
+.advancedSearch{
+  position: absolute;
+  left: 20px;
+  z-index: 1;
+}
+
+.filtered .item-comic {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    font-size: 0;
+    display: none;
+}
+
+.filtered.superheroes .item-comic.superheroes,
+.filtered.scienceFiction .item-comic.scienceFiction,
+.filtered.others .item-comic.others{
+    width: 35%;
+    height: auto;
+    font-size: 18px!important;
+    display: inline-block;
+}
+
+.filtered.spiderman .item-comic.superheroes,
+.filtered.spiderwoman .item-comic.scienceFiction{
+    width: 35%;
+    height: auto;
+    font-size: 18px!important;
+    display: inline-block;
+}
+
+.filteredAdvancedSearchComics {
+  width: 30%;
+  height: auto;
+  font-size: 18px!important;
+  display: inline-block;
+}
+
+.FixedHeader {
+  background-color: rgba(0, 0, 0, 0.43);
+  top: 0;
+  position: fixed;
+  height: 70px;
+  width: 100%;
+  z-index: 1;
+}
